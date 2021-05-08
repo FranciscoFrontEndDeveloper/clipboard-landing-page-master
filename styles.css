@@ -18,6 +18,14 @@
   grid-template-columns: 1fr;
   align-items: center;
 }
+.sectionMain1 div, .sectionMain2 div, .sectionMain3 div, .sectionMain4 div, .sectionMain5 div, .sectionMain6 div, .sectionMain7 div {
+  display: inline-grid;
+  width: 100%;
+  justify-items: center;
+}
+.sectionMain1 div button, .sectionMain2 div button, .sectionMain3 div button, .sectionMain4 div button, .sectionMain5 div button, .sectionMain6 div button, .sectionMain7 div button {
+  width: 200px;
+}
 .sectionMain1 img, .sectionMain2 img, .sectionMain3 img, .sectionMain4 img, .sectionMain5 img, .sectionMain6 img, .sectionMain7 img {
   border: 2px solid lime;
   width: 50px;
@@ -54,7 +62,67 @@
 .sectionMain7 {
   grid-template-rows: repeat(7, auto);
 }
+.sectionMain7 div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
 
+@media screen and (min-width: 768px) and (max-width: 1920px) {
+  .sectionMain1, .sectionMain2, .sectionMain3, .sectionMain4, .sectionMain5, .sectionMain6, .sectionMain7 {
+    display: grid;
+  }
+
+  .sectionMain1 div, .sectionMain6 div {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 20px;
+    justify-content: center;
+  }
+
+  .sectionMain2 {
+    grid-template-columns: repeat(2, auto);
+  }
+  .sectionMain2 h2, .sectionMain2 p {
+    grid-column: 1/3;
+  }
+  .sectionMain2 img {
+    grid-column: 1/2;
+  }
+  .sectionMain2 .sectionMain3 {
+    grid-column: 2/3;
+  }
+
+  .sectionMain5 {
+    grid-template-columns: repeat(2, auto);
+  }
+  .sectionMain5 h2, .sectionMain5 p {
+    grid-column: 1/3;
+  }
+  .sectionMain5 .main5Card {
+    grid-column: 1/3;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .sectionMain5 .main5Card div {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .sectionMain5 .main5Card div img, .sectionMain5 .main5Card div p, .sectionMain5 .main5Card div h3 {
+    grid-column: 1/2;
+  }
+  .sectionMain5 .main5icons {
+    display: grid;
+    grid-column: 1/3;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .sectionMain7 {
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+  }
+  .sectionMain7 div {
+    justify-content: end;
+  }
+}
 .containerFooter {
   display: grid;
   justify-items: center;
