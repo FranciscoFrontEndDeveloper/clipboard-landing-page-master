@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
 .Main {
   display: grid;
   grid-template-columns: 1fr;
@@ -5,12 +6,14 @@
   width: 100%;
   height: 100vh;
   overflow: visible;
+  font-family: "Bai Jamjuree", sans-serif;
 }
 
 .containerMain {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(7, auto);
+  row-gap: 50px;
 }
 
 .sectionMain1, .sectionMain2, .sectionMain3, .sectionMain4, .sectionMain5, .sectionMain6, .sectionMain7 {
@@ -18,6 +21,7 @@
   justify-items: center;
   grid-template-columns: 1fr;
   align-items: center;
+  row-gap: 20px;
 }
 .sectionMain1 div, .sectionMain2 div, .sectionMain3 div, .sectionMain4 div, .sectionMain5 div, .sectionMain6 div, .sectionMain7 div {
   display: inline-grid;
@@ -27,9 +31,26 @@
 .sectionMain1 div button, .sectionMain2 div button, .sectionMain3 div button, .sectionMain4 div button, .sectionMain5 div button, .sectionMain6 div button, .sectionMain7 div button {
   width: 200px;
   height: auto;
+  border: none;
+  border-radius: 40px;
+  color: #fff;
+  font-weight: 400;
+  padding: 10px 0;
 }
-.sectionMain1 h1, .sectionMain1 h2, .sectionMain1 h3, .sectionMain1 h4, .sectionMain1 p, .sectionMain2 h1, .sectionMain2 h2, .sectionMain2 h3, .sectionMain2 h4, .sectionMain2 p, .sectionMain3 h1, .sectionMain3 h2, .sectionMain3 h3, .sectionMain3 h4, .sectionMain3 p, .sectionMain4 h1, .sectionMain4 h2, .sectionMain4 h3, .sectionMain4 h4, .sectionMain4 p, .sectionMain5 h1, .sectionMain5 h2, .sectionMain5 h3, .sectionMain5 h4, .sectionMain5 p, .sectionMain6 h1, .sectionMain6 h2, .sectionMain6 h3, .sectionMain6 h4, .sectionMain6 p, .sectionMain7 h1, .sectionMain7 h2, .sectionMain7 h3, .sectionMain7 h4, .sectionMain7 p {
+.sectionMain1 div button:nth-child(1), .sectionMain2 div button:nth-child(1), .sectionMain3 div button:nth-child(1), .sectionMain4 div button:nth-child(1), .sectionMain5 div button:nth-child(1), .sectionMain6 div button:nth-child(1), .sectionMain7 div button:nth-child(1) {
+  background: #26baa4;
+}
+.sectionMain1 div button:nth-child(2), .sectionMain2 div button:nth-child(2), .sectionMain3 div button:nth-child(2), .sectionMain4 div button:nth-child(2), .sectionMain5 div button:nth-child(2), .sectionMain6 div button:nth-child(2), .sectionMain7 div button:nth-child(2) {
+  background: #6173ff;
+}
+.sectionMain1 h1, .sectionMain1 h2, .sectionMain1 h3, .sectionMain1 h4, .sectionMain2 h1, .sectionMain2 h2, .sectionMain2 h3, .sectionMain2 h4, .sectionMain3 h1, .sectionMain3 h2, .sectionMain3 h3, .sectionMain3 h4, .sectionMain4 h1, .sectionMain4 h2, .sectionMain4 h3, .sectionMain4 h4, .sectionMain5 h1, .sectionMain5 h2, .sectionMain5 h3, .sectionMain5 h4, .sectionMain6 h1, .sectionMain6 h2, .sectionMain6 h3, .sectionMain6 h4, .sectionMain7 h1, .sectionMain7 h2, .sectionMain7 h3, .sectionMain7 h4 {
   text-align: center;
+  font-weight: 600;
+}
+.sectionMain1 p, .sectionMain2 p, .sectionMain3 p, .sectionMain4 p, .sectionMain5 p, .sectionMain6 p, .sectionMain7 p {
+  text-align: center;
+  color: #4c545d;
+  font-weight: 400;
 }
 
 .sectionMain1 {

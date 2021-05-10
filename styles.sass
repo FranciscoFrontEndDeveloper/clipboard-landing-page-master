@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap')
 //<!-- '[styles mobile start]' -->
 .Main
  display: grid
@@ -6,15 +7,18 @@
  width: 100%
  height: 100vh
  overflow: visible
+ font-family: 'Bai Jamjuree', sans-serif
 .containerMain
  display: grid
  grid-template-columns: 1fr
  grid-template-rows: repeat(7,auto )
+ row-gap: 50px
 .sectionMain1, .sectionMain2, .sectionMain3, .sectionMain4, .sectionMain5, .sectionMain6, .sectionMain7
  display: inline-grid
  justify-items: center
  grid-template-columns: 1fr
  align-items: center
+ row-gap: 20px
  div
    display: inline-grid
    width: 100%
@@ -22,8 +26,22 @@
    button
      width: 200px
      height: auto
- h1,h2,h3,h4, p
+     border: none
+     border-radius: 40px
+     color: #fff
+     font-weight: 400
+     padding: 10px 0
+   button:nth-child(1)
+     background: hsl(171, 66%, 44%)
+   button:nth-child(2)
+     background: hsl(233, 100%, 69%)
+ h1,h2,h3,h4
   text-align: center
+  font-weight: 600
+ p
+   text-align: center
+   color: hsl(210, 10%, 33%)
+   font-weight: 400
 .sectionMain1
  grid-template-rows: repeat(5,auto)
  img
