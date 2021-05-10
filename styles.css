@@ -104,6 +104,10 @@
     column-gap: 20px;
     justify-content: center;
   }
+  .sectionMain1 img, .sectionMain6 img {
+    width: 7%;
+    height: auto;
+  }
 
   .sectionMain2 {
     grid-template-columns: repeat(2, auto);
@@ -113,9 +117,16 @@
   }
   .sectionMain2 img {
     grid-column: 1/2;
+    width: 70%;
+    height: auto;
   }
   .sectionMain2 .sectionMain3 {
     grid-column: 2/3;
+  }
+
+  .sectionMain4 img {
+    width: 50%;
+    height: auto;
   }
 
   .sectionMain5 {
