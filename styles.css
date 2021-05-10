@@ -4,6 +4,7 @@
   grid-template-rows: 1fr;
   width: 100%;
   height: 100vh;
+  overflow: visible;
 }
 
 .containerMain {
@@ -25,11 +26,7 @@
 }
 .sectionMain1 div button, .sectionMain2 div button, .sectionMain3 div button, .sectionMain4 div button, .sectionMain5 div button, .sectionMain6 div button, .sectionMain7 div button {
   width: 200px;
-}
-.sectionMain1 img, .sectionMain2 img, .sectionMain3 img, .sectionMain4 img, .sectionMain5 img, .sectionMain6 img, .sectionMain7 img {
-  border: 2px solid lime;
-  width: 50px;
-  height: 50px;
+  height: auto;
 }
 .sectionMain1 h1, .sectionMain1 h2, .sectionMain1 h3, .sectionMain1 h4, .sectionMain1 p, .sectionMain2 h1, .sectionMain2 h2, .sectionMain2 h3, .sectionMain2 h4, .sectionMain2 p, .sectionMain3 h1, .sectionMain3 h2, .sectionMain3 h3, .sectionMain3 h4, .sectionMain3 p, .sectionMain4 h1, .sectionMain4 h2, .sectionMain4 h3, .sectionMain4 h4, .sectionMain4 p, .sectionMain5 h1, .sectionMain5 h2, .sectionMain5 h3, .sectionMain5 h4, .sectionMain5 p, .sectionMain6 h1, .sectionMain6 h2, .sectionMain6 h3, .sectionMain6 h4, .sectionMain6 p, .sectionMain7 h1, .sectionMain7 h2, .sectionMain7 h3, .sectionMain7 h4, .sectionMain7 p {
   text-align: center;
@@ -38,9 +35,17 @@
 .sectionMain1 {
   grid-template-rows: repeat(5, auto);
 }
+.sectionMain1 img {
+  width: 30%;
+  height: auto;
+}
 
 .sectionMain2 {
   grid-template-rows: repeat(4, auto);
+}
+.sectionMain2 img {
+  width: 70%;
+  height: auto;
 }
 
 .sectionMain3 {
@@ -50,9 +55,22 @@
 .sectionMain4 {
   grid-template-rows: repeat(3, auto);
 }
+.sectionMain4 img {
+  width: 75%;
+  height: auto;
+}
 
 .sectionMain5 {
   grid-template-rows: repeat(10, auto);
+}
+.sectionMain5 img {
+  width: 30px;
+  height: auto;
+}
+
+.main5icons img {
+  width: 45%;
+  height: auto;
 }
 
 .sectionMain6 {
@@ -62,9 +80,17 @@
 .sectionMain7 {
   grid-template-rows: repeat(7, auto);
 }
+.sectionMain7 img {
+  width: 10%;
+  height: auto;
+}
 .sectionMain7 div {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+}
+.sectionMain7 div img {
+  width: 14px;
+  height: auto;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1920px) {

@@ -5,6 +5,7 @@
  grid-template-rows: 1fr
  width: 100%
  height: 100vh
+ overflow: visible
 .containerMain
  display: grid
  grid-template-columns: 1fr
@@ -20,29 +21,48 @@
    justify-items: center
    button
      width: 200px
- img
-  border: 2px solid lime
-  width: 50px 
-  height: 50px
+     height: auto
  h1,h2,h3,h4, p
   text-align: center
 .sectionMain1
  grid-template-rows: repeat(5,auto)
+ img
+   width: 30%
+   height: auto
 .sectionMain2
  grid-template-rows: repeat(4,auto)
+ img
+   width: 70%
+   height: auto
 .sectionMain3
  grid-template-rows: repeat(6, auto)
 .sectionMain4
  grid-template-rows: repeat(3, auto)
+ img
+  width: 75%
+  height: auto
 .sectionMain5
  grid-template-rows: repeat(10, auto)
+ img
+   width: 30px
+   height: auto
+.main5icons
+  img
+    width: 45%
+    height: auto
 .sectionMain6
  grid-template-rows: repeat(4, auto )
 .sectionMain7
  grid-template-rows: repeat(7, auto )
+ img
+   width: 10%
+   height: auto
  div
    display: grid
    grid-template-columns: repeat(3,1fr )
+   img
+     width: 14px
+     height: auto 
 //<!-- '[styles mobile end]' -->
 //<!-- '[styles tablet start]' -->
 @media screen and ( min-width: 768px ) and (max-width: 1920px)
