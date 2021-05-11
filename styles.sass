@@ -13,6 +13,7 @@
  grid-template-columns: 1fr
  grid-template-rows: repeat(7,auto )
  row-gap: 100px
+ margin-top: 50px
 .sectionMain1, .sectionMain2, .sectionMain3, .sectionMain4, .sectionMain5, .sectionMain6, .sectionMain7
  display: inline-grid
  justify-items: center
@@ -30,7 +31,9 @@
      border-radius: 40px
      color: #fff
      font-weight: 400
+     font-size: 14px
      padding: 10px 0
+     cursor: pointer
    button:nth-child(1)
      background: hsl(171, 66%, 44%)
    button:nth-child(2)
@@ -87,6 +90,8 @@
     display: grid
     grid-template-rows: repeat(3,auto )
     row-gap: 30px
+    img
+      height: 25px
 .sectionMain6
  grid-template-rows: repeat(4, auto )
  div
@@ -116,44 +121,121 @@
       grid-template-columns: repeat(2, auto)
       column-gap: 20px
       justify-content: center
+      button
+        width: 150px
+        font-size: 12px
     img
       width: 7%
       height: auto
+    p
+      width: 45%
+      font-size: 18px
+    h1
+      font-size: 39px  
   .sectionMain2
     grid-template-columns: repeat(2,auto )
     h2,p
       grid-column: 1/3
+      text-align: center
     img
       grid-column: 1/2
-      width: 70%
+      width: 100%
       height: auto
+      transform: translateX(-10%)
+    p
+      width: 53%
+      font-size: 18px
+    h2
+      font-size: 24px
     .sectionMain3
       grid-column: 2/3
+      justify-items: start
+      width: 60%
+      h3, p
+        text-align: left
+      h3
+        font-size: 20px
+      p
+        width: 90%
+        font-size: 18px
   .sectionMain4
     img
       width: 50%
       height: auto
+    p
+      width: 50%
+      font-size: 18px
+    h2
+      font-size: 24px
   .sectionMain5
     grid-template-columns: repeat(2,auto )
+    row-gap: 100px
     h2,p
       grid-column: 1/3
+    h2
+      font-size: 24px
+    p
+      font-size: 18px
     .main5Card
       grid-column: 1/3
       grid-template-columns: repeat(3,1fr )
+      grid-template-rows: 1fr
+      align-items: start
       div
         display: grid
         grid-template-columns: 1fr
         img,p,h3
           grid-column: 1/2
+        p
+          width: 85%
+          font-size: 18px
+        h3
+          width: 100%
+          font-size: 24px
     .main5icons
       display: grid
       grid-column: 1/3
       grid-template-columns: repeat(5,1fr )
+      grid-template-rows: 1fr
+      img
+        width: 50%
+  .sectionMain6
+    p
+      width: 50%
   .sectionMain7
     display: grid
-    grid-template-columns: repeat(7,auto )  
+    grid-template-columns: repeat(7,auto ) 
+    grid-template-rows: repeat(2, 1fr)
+    row-gap: 0
+    align-items: start
+    img
+      grid-row: 1/3
+      width: 15%
     div
       justify-content: end
+      width: 100%
+      grid-column: 7/8
+    p
+      text-align: left
+      font-size: 18px
+      cursor: pointer
+      &:hover
+        color: hsl(171, 66%, 44%)
+    p:nth-child(2)
+      grid-column: 2/3
+      grid-row: 1/2
+    p:nth-child(3)
+      grid-column: 2/3
+      grid-row: 2/3
+    p:nth-child(4)
+      grid-column: 3/4
+      grid-row: 1/2
+    p:nth-child(5)
+      grid-column: 3/4
+      grid-row: 2/3
+    p:nth-child(6)
+
+ 
       
     
 //<!-- '[styles tablet end]' -->
@@ -188,6 +270,7 @@
  justify-items: center
  background: #000
  width: 100%
+ padding: 10px 0
  h3
   color: #fff
   text-align: center
