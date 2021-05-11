@@ -12,7 +12,7 @@
  display: grid
  grid-template-columns: 1fr
  grid-template-rows: repeat(7,auto )
- row-gap: 50px
+ row-gap: 100px
 .sectionMain1, .sectionMain2, .sectionMain3, .sectionMain4, .sectionMain5, .sectionMain6, .sectionMain7
  display: inline-grid
  justify-items: center
@@ -38,15 +38,25 @@
  h1,h2,h3,h4
   text-align: center
   font-weight: 600
+  width: 60%
+  font-size: 18px
+  color: hsl(210, 10%, 33%)
  p
    text-align: center
-   color: hsl(210, 10%, 33%)
+   color: hsl(201, 11%, 66%)
    font-weight: 400
+   font-size: 10px
+   width: 60%
+   line-height: 1.6
 .sectionMain1
  grid-template-rows: repeat(5,auto)
  img
-   width: 30%
+   width: 25%
    height: auto
+ div
+   display: grid
+   grid-template-rows: repeat(2,auto )
+   row-gap: 15px
 .sectionMain2
  grid-template-rows: repeat(4,auto)
  img
@@ -60,16 +70,29 @@
   width: 75%
   height: auto
 .sectionMain5
- grid-template-rows: repeat(10, auto)
+ grid-template-rows: repeat(4, auto)
  img
    width: 30px
    height: auto
 .main5icons
+  grid-template-rows: repeat(5,auto )
+  row-gap: 50px
   img
-    width: 45%
+    width: 25%
     height: auto
+.main5Card
+  grid-template-rows: repeat(3,auto )
+  row-gap: 20px 
+  div
+    display: grid
+    grid-template-rows: repeat(3,auto )
+    row-gap: 30px
 .sectionMain6
  grid-template-rows: repeat(4, auto )
+ div
+   display: grid
+   grid-template-rows: repeat(2,auto )
+   row-gap: 15px
 .sectionMain7
  grid-template-rows: repeat(7, auto )
  img
@@ -78,6 +101,7 @@
  div
    display: grid
    grid-template-columns: repeat(3,1fr )
+   width: 35%
    img
      width: 14px
      height: auto 
